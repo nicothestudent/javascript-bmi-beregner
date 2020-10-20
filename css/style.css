@@ -45,8 +45,8 @@ input[type=text]{
     margin: 0 auto 30px;
     font-size: 20px;
 }
-/*Beregn knappen*/
-#beregn_btn{
+/*Beregn og reset knapper*/
+#beregn_btn,#reset_btn{
     background-color: #5cb85c;
     color: #fff;
     padding: 10px 20px;
@@ -58,6 +58,3 @@ input[type=text]{
     display: none;
 }
 
-.show{
-    display: block;
-}

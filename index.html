@@ -10,8 +10,8 @@
 </head>
 
 <body>
-      <!--Dette er vores container div, som vi benytter til at centrere siden-->
-      <div id="container">
+       <!--Dette er vores container div, som vi benytter til at centrere siden-->
+    <div id="container">
 
         <!--Dette er vores indholdsdiv-->
         <div id="content">
@@ -23,9 +23,13 @@
         Skjult fra start med class="hide"-->
             <div id="error" class="hide">Her kan der stå en fejlmeddelelse</div>
             <!--Dette er vores resultat div hvor præsenterer resultatet af BMI beregningen for brugeren. Dette div er skjult fra start med class="hide"-->
-            <div id="result" class="hide">Her skal resultatet stå</div>
+            <div id="result" class="hide">
+                <h3 id="resultatOverskrift"></h3>
+                <p id="resultatTekst"></p>
+                <button id="reset_btn">Beregn igen</button>
+            </div>
             <!--dette er vores form div, som vi benytter til at centerjustere formularen og give den en baggrundsfarve. -->
-            <div id="formdiv" >
+            <div id="formdiv">
                 <h3>Beregn BMI</h3>
                 <!--Form-->
 
