@@ -1,0 +1,63 @@
+/*sætter div box-sizing til border-box for at bibeholder den korrekt bredde*/
+div{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    background-color: #eee;
+}
+/*Container div til at centerjustere siden*/
+#container{
+    width: 1080px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #fff;
+    padding: 20px;
+}
+/*Fejlmeddelelses boksen*/
+#error{
+    background-color: #f2dede;
+    color: #a94442;
+    min-height: 50px;
+    margin-bottom: 20px;
+    padding: 20px;
+}
+/*divs til at rumme beregner og resultat*/
+#formdiv,#result{
+    font-size: 18px;
+    background-color: #ccc;
+    width: 600px;
+    /* margin-left: auto;
+    margin-right: auto; */
+    margin: 40px auto ;
+    padding: 20px;
+    border-radius: 10px;
+}
+/*Sætter vores beregner labels og inputs til at blive block elementer, så den fylder hele den tilgængelige plads*/
+input,label{
+    display: block;
+}
+/*input af typen text i beregneren*/
+input[type=text]{
+    
+    width: 100%;
+    height: 40px;
+    margin: 0 auto 30px;
+    font-size: 20px;
+}
+/*Beregn knappen*/
+#beregn_btn{
+    background-color: #5cb85c;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    font-size: 20px;
+}
+/*disse CSS regler bruges til at vise og gemme de forskellige div tags*/
+.hide{
+    display: none;
+}
+
+.show{
+    display: block;
+}
