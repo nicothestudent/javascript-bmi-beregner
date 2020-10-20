@@ -5,6 +5,7 @@ div{
 body{
     margin: 0;
     background-color: #eee;
+    font-family: Arial, Helvetica, sans-serif;
 }
 /*Container div til at centerjustere siden*/
 #container{
