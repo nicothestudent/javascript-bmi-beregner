@@ -10,31 +10,48 @@
 </head>
 
 <body>
-    <!--Dette er vores container div, som vi benytter til at centrere siden-->
-    <div id="container">
-        <!--Dette div er til evt. fejlmeddelelser. Fx hvis brugeren ikke har indtastet noget i input felterne inden han klikker på beregn knappen
-        Skjult fra start med class="hide"-->
-        <div id="error" class="hide">Her kan der stå en fejlmeddelelse</div>
+      <!--Dette er vores container div, som vi benytter til at centrere siden-->
+      <div id="container">
+
         <!--Dette er vores indholdsdiv-->
-        <div id="content" > 
+        <div id="content">
             <h1>Beregn dit BMI her</h1>
             <h2>Dit BMI har stor betydning for din risko for hjertekarsygdomme</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid doloribus quia neque hic ad voluptatum iure illo, dolorum sequi eos animi beatae aspernatur, nam corrupti harum inventore a excepturi ea.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid doloribus quia neque hic ad voluptatum
+                iure illo, dolorum sequi eos animi beatae aspernatur, nam corrupti harum inventore a excepturi ea.</p>
+            <!--Dette div er til evt. fejlmeddelelser. Fx hvis brugeren ikke har indtastet noget i input felterne inden han klikker på beregn knappen
+        Skjult fra start med class="hide"-->
+            <div id="error" class="hide">Her kan der stå en fejlmeddelelse</div>
             <!--Dette er vores resultat div hvor præsenterer resultatet af BMI beregningen for brugeren. Dette div er skjult fra start med class="hide"-->
             <div id="result" class="hide">Her skal resultatet stå</div>
-            <!--dette er vores form div, som vi benytter til at centerjustere formularen og give den en baggrundsfarve. Dette div er vist fra start med class="show"-->
-            <div id="formdiv" class="show">
+            <!--dette er vores form div, som vi benytter til at centerjustere formularen og give den en baggrundsfarve. -->
+            <div id="formdiv" >
                 <h3>Beregn BMI</h3>
                 <!--Form-->
-                <form >
-                    <label for="hojde">Indtast din højde(cm)</label>
-                    <input type="text" name="hojde" id="input_hojde" placeholder="Din højde i centimeter" required>
-                    <label for="vaegt">Indtast din vægt</label>
-                    <input type="text" name="vaegt" id="input_vaegt" placeholder="Din vægt i kg" required>
-                    <button id="beregn_btn">Beregn</button>
-                </form>
+
+                <label for="hojde">Indtast din højde(cm)</label>
+                <input type="text" name="hojde" id="input_hojde" placeholder="Din højde i centimeter" required>
+                <label for="vaegt">Indtast din vægt</label>
+                <input type="text" name="vaegt" id="input_vaegt" placeholder="Din vægt i kg" required>
+                <button id="beregn_btn">Beregn</button>
+
             </div>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sapiente voluptates dolorum perferendis perspiciatis vel illum dolores quas odio nesciunt, numquam recusandae similique eum modi, dicta blanditiis rerum ullam omnis sit itaque soluta. Corporis ab ea ipsum veniam. Impedit veritatis tempora libero voluptatibus possimus laboriosam, autem facere, maiores, dolore ipsa dicta consequuntur voluptates ipsum ratione saepe natus qui doloremque nisi optio voluptatem amet dignissimos. Odit enim sunt pariatur dicta quos, voluptatum maiores sequi sint omnis aspernatur sed libero odio natus doloremque, quidem assumenda. Consectetur maxime cum tempora laboriosam quidem veniam dolorum quos, magnam nostrum beatae eius aliquam reiciendis iste facilis corporis quod fuga a. Placeat, laudantium facere. Aut dolores incidunt dignissimos itaque numquam obcaecati commodi alias reprehenderit quod fugiat dicta quisquam eum, ut quis porro ea sunt, excepturi cum nobis in molestiae nisi. In odit eum praesentium accusamus eius rerum. Cumque beatae, quibusdam possimus sapiente quis libero illum est odit, eius aut perferendis doloribus officiis quaerat molestiae. Obcaecati dolor unde odio vitae sint distinctio, molestiae doloremque. Quae aliquid fugiat veritatis alias dolore. Quidem odio fuga saepe! Doloribus libero quia voluptates, nihil expedita voluptatum excepturi optio incidunt repellendus rerum. Et cupiditate similique quas. Eius excepturi dolore tempora, quo pariatur voluptate accusantium quis.</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sapiente voluptates dolorum perferendis
+                perspiciatis vel illum dolores quas odio nesciunt, numquam recusandae similique eum modi, dicta
+                blanditiis rerum ullam omnis sit itaque soluta. Corporis ab ea ipsum veniam. Impedit veritatis tempora
+                libero voluptatibus possimus laboriosam, autem facere, maiores, dolore ipsa dicta consequuntur
+                voluptates ipsum ratione saepe natus qui doloremque nisi optio voluptatem amet dignissimos. Odit enim
+                sunt pariatur dicta quos, voluptatum maiores sequi sint omnis aspernatur sed libero odio natus
+                doloremque, quidem assumenda. Consectetur maxime cum tempora laboriosam quidem veniam dolorum quos,
+                magnam nostrum beatae eius aliquam reiciendis iste facilis corporis quod fuga a. Placeat, laudantium
+                facere. Aut dolores incidunt dignissimos itaque numquam obcaecati commodi alias reprehenderit quod
+                fugiat dicta quisquam eum, ut quis porro ea sunt, excepturi cum nobis in molestiae nisi. In odit eum
+                praesentium accusamus eius rerum. Cumque beatae, quibusdam possimus sapiente quis libero illum est odit,
+                eius aut perferendis doloribus officiis quaerat molestiae. Obcaecati dolor unde odio vitae sint
+                distinctio, molestiae doloremque. Quae aliquid fugiat veritatis alias dolore. Quidem odio fuga saepe!
+                Doloribus libero quia voluptates, nihil expedita voluptatum excepturi optio incidunt repellendus rerum.
+                Et cupiditate similique quas. Eius excepturi dolore tempora, quo pariatur voluptate accusantium quis.
+            </p>
         </div>
     </div>
 
