@@ -10,7 +10,7 @@
 </head>
 
 <body>
-       <!--Dette er vores container div, som vi benytter til at centrere siden-->
+    <!--Dette er vores container div, som vi benytter til at centrere siden-->
     <div id="container">
 
         <!--Dette er vores indholdsdiv-->
@@ -58,7 +58,69 @@
             </p>
         </div>
     </div>
+    <script>
+        var beregnKnap = document.getElementById("beregn_btn");
+        var resetKnap = document.getElementById("reset_btn");
+        var resultdiv = document.getElementById("result");
+        var errordiv = document.getElementById("error");
+        var resultatOverskrift = document.getElementById("resultatOverskrift");
+        var formdiv = document.getElementById("formdiv");
+        var resultatTekst = document.getElementById("resultatTekst");
 
+        beregnKnap.addEventListener("click", function () {
+            var hojde = document.getElementById("input_hojde").value;
+            var vaegt = document.getElementById("input_vaegt").value;
+            //tester om bruger har indtastet noget
+            if (hojde != "" && vaegt != "") {
+                //lave BMI Beregning
+                var BMI = vaegt / ((hojde / 100) * (hojde / 100))
+                resultatOverskrift.innerHTML = "Dit BMI er " + BMI.toFixed(2);
+                if (BMI >= 25) {
+                    resultatTekst.innerHTML = "Du er derfor overvægtig " + BMI.toFixed(2);
+                    //console.log(BMI);
+
+                }
+                else if (BMI <= 18.5) {
+                    console.log("Du er undervægtig : " + BMI);
+                    resultatTekst.innerHTML = "Du er derfor undervægtig " + BMI.toFixed(2);
+                }
+                else {
+                    resultatTekst.innerHTML = "Du er derfor normalvægtig " + BMI.toFixed(2);
+
+                }
+                //Skjuler errordiv
+                errordiv.classList.add("hide");
+                //Skjuler formdiv
+                formdiv.classList.add("hide");
+                //Viser resultatdiv
+                resultdiv.classList.remove("hide");
+                //slut if indtastet vægt og højde
+
+
+
+
+
+            } else {
+                errordiv.classList.remove("hide");
+            }
+
+
+        })
+
+        resetKnap.addEventListener("click", function () {
+            document.getElementById("input_hojde").value = "";
+            document.getElementById("input_vaegt").value = "";
+            formdiv.classList.remove("hide");
+            //viser resultatdiv
+            resultdiv.classList.add("hide");
+
+        })
+
+
+
+
+
+    </script>
 </body>
 
 </html>
